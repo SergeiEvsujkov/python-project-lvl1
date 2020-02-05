@@ -1,0 +1,5 @@
+# Игнорировать все файлы в директории build/
+git/
+sergeievsujkov_brain_games.egg-info/
+.venv/
+
