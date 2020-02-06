@@ -9,4 +9,4 @@ install:
   - poetry install
 
 script:
-  - poetry run
+  - Make
