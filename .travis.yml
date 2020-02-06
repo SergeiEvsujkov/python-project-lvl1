@@ -3,10 +3,10 @@ python: 3.6
 
 before_install:
   # make depends on poetry
-  - poetry install
+  - pip install poetry
 
 install:
-  - make install
+  - poetry install
 
 script:
   - poetry run
