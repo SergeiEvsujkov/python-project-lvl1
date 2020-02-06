@@ -1,5 +1,13 @@
-def main():   
-    print('Welcome to the Brain Games!')
+import sys
+sys.path.append("/home/sergei/python-project-lvl1/brain_games")
+
+from cli import welcome_user
+
+def main():
+    welcome_user()
 
 if __name__ == '__main__':
     main()
+
+
+
