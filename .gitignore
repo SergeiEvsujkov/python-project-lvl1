@@ -2,4 +2,5 @@
 git/
 sergeievsujkov_brain_games.egg-info/
 .venv/
+.pyc
 
