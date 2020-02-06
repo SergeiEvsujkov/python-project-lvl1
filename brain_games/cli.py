@@ -1,7 +1,7 @@
 # This Python file uses the following encoding: utf-8
 import prompt
 
-def welcome_user() -> str:
+def welcome_user():
     """Do name and return a list."""
     print('Welcome to the Brain Games!')
     print('')

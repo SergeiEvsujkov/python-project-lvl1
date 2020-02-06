@@ -3,8 +3,7 @@
 install:
 	poetry install
 
-lint:
+makelint:
 	poetry run flake8 brain_games
 
-.PHONY: install lint
-
+.PHONY: install makelint
