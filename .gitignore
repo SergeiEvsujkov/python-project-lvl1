@@ -3,4 +3,7 @@ git/
 sergeievsujkov_brain_games.egg-info/
 .venv/
 .pyc
+dist/
+__pycache__/
+
 
