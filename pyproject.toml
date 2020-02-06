@@ -8,7 +8,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^2.6"
+python = "^3.5"
 prompt = "^0.4.1"
 
 
