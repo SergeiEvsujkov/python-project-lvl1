@@ -1,11 +1,7 @@
-import sys
-import os
-sys.path.append(os.getcwd() + '/brain_games')
+#!/usr/bin/env python3
 
-#import sys
-#sys.path.append('/home/sergei/python-project-lvl1/brain_games')
+from brain_games.cli import welcome_user
 
-from cli import welcome_user
 
 def main():
     """Foo bar documentation."""
