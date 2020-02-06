@@ -9,4 +9,5 @@ install:
   - poetry install
 
 script:
-  - Make
+  - make
+  - make lint
