@@ -8,6 +8,17 @@ import prompt
 
 
 def welcome_user():
-    """Return a user's name."""
+    """Welcome."""
     print('Welcome to the Brain Games!')
-    print('Hello, {}!'.format(prompt.string('\nMay I have your name? ')))
+
+
+def welcome_user1():
+    """Return the value, name.
+
+    # noqa: DAR201
+
+    """
+    name = prompt.string('\nMay I have your name? ')
+    print('Hello, {}!'.format(name))
+    print('')
+    return name
