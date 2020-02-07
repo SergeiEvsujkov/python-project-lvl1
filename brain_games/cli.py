@@ -1,9 +1,13 @@
-# This Python file uses the following encoding: utf-8
+# -*- coding: utf-8 -*-
+
+
+"""Function Welcome."""
+
+
 import prompt
 
+
 def welcome_user():
-    """Do name and return a list."""
+    """Return a user's name."""
     print('Welcome to the Brain Games!')
-    print('')
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
+    print('Hello, {}!'.format(prompt.string('\nMay I have your name? ')))

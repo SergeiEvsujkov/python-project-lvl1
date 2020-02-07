@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+
+"""Function Main."""
 
 from brain_games.cli import welcome_user
 
