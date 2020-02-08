@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "SergeiEvsujkov_brain_games"
-version = "0.7.1"
+version = "0.9.1"
 description = ""
 authors = ["sergei <evsujkov@yandex.ru>"]
 packages = [
@@ -16,6 +16,8 @@ brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:maineven"
 brain-calc = "brain_games.scripts.brain_calc:maincalc"
 brain-gcd = "brain_games.scripts.brain_gcd:maingcd"
+brain-progression = "brain_games.scripts.brain_progression:mainprogression"
+brain-prime = "brain_games.scripts.brain_prime:mainprime"
 
 [[tool.poetry.source]]
 name =  "mydist" 
