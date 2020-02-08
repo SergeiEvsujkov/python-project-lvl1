@@ -4,12 +4,12 @@
 """Function Even."""
 
 from brain_games.cli import welcome_user1
-from brain_games.games.even import game_even, question
+from brain_games.games.calc import game_calc, question
 
 
-def maineven():
+def maincalc():
     """Foo bar documentation."""
-    game_even()
+    game_calc()
     name = welcome_user1()
     question(name)
     question(name)
@@ -18,4 +18,4 @@ def maineven():
 
 
 if __name__ == '__main__':
-    maineven()
+    maincalc()

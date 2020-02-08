@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "SergeiEvsujkov_brain_games"
-version = "0.3.0"
+version = "0.5.1"
 description = ""
 authors = ["sergei <evsujkov@yandex.ru>"]
 packages = [
@@ -13,7 +13,8 @@ prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.brain_even:main"
+#brain-even = "brain_games.scripts.brain_even:main"
+#brain-calc = "brain_games.scripts.brain_calc:main1"
 
 [[tool.poetry.source]]
 name =  "mydist" 
@@ -22,4 +23,3 @@ url =  "https://test.pypi.org/legacy/"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
-

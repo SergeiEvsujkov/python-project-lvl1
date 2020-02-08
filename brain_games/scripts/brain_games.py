@@ -3,14 +3,20 @@
 
 """Function Main."""
 
-from brain_games.cli import welcome_user, welcome_user1
+import prompt
 
+from brain_games.scripts.brain_even import maineven
+from brain_games.scripts.brain_calc import maincalc
 
 def main():
-    """Foo bar documentation."""
-    welcome_user()
-    welcome_user1()
-
+    answermain = prompt.string('Сhoose a game ("even" or "calc"): ')
+    if answermain == 'even':
+        maineven()
+    elif answermain == 'calc':
+        maincalc()
+    else:
+        print('Wrong game name')
+        main()
 
 if __name__ == '__main__':
     main()
