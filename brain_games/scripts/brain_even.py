@@ -9,8 +9,8 @@ from brain_games.games.even import game_even, question
 
 def maineven():
     """Foo bar documentation."""
-    game_even()
     name = welcome_user1()
+    game_even()
     question(name)
     question(name)
     question(name)

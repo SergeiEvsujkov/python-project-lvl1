@@ -9,8 +9,8 @@ from brain_games.games.calc import game_calc, question
 
 def maincalc():
     """Foo bar documentation."""
-    game_calc()
     name = welcome_user1()
+    game_calc()
     question(name)
     question(name)
     question(name)

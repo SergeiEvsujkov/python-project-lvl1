@@ -11,7 +11,7 @@ import prompt
 
 def game_calc():
     """Welcome."""
-    print('Welcome to the Brain Games!\nWhat is the result of the expression?')
+    print('What is the result of the expression?')
 
 
 def question(username):

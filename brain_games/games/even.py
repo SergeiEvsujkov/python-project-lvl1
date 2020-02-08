@@ -11,7 +11,7 @@ import prompt
 
 def game_even():
     """Welcome."""
-    print('Welcome to the Brain Games!\nAnswer "yes" if number even otherwise answer "no".')
+    print('Answer "yes" if number even otherwise answer "no".')
 
 
 def question(username):
