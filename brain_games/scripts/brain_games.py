@@ -5,19 +5,20 @@
 
 import prompt
 
-from brain_games.cli import welcome_user
 from brain_games.scripts.brain_calc import maincalc
 from brain_games.scripts.brain_even import maineven
+from brain_games.scripts.brain_gcd import maingcd
 
 
 def main():
     """Foo bar documentation."""
-    welcome_user()
-    answermain = prompt.string('Сhoose a game ("even" or "calc"): ')
+    answermain = prompt.string('Сhoose a game ("even" or "calc" or "gcd): ')
     if answermain == 'even':
         maineven()
     elif answermain == 'calc':
         maincalc()
+    elif answermain == 'gcd':
+        maingcd()
     else:
         print('Wrong game name')
         main()

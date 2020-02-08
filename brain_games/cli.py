@@ -18,7 +18,7 @@ def welcome_user1():
     # noqa: DAR201
 
     """
-    name = prompt.string('\nMay I have your name? ')
-    print('Hello, {}!'.format(name))
+    name_user = prompt.string('\nMay I have your name? ')
+    print('Hello, {}!'.format(name_user))
     print('')
-    return name
+    return name_user

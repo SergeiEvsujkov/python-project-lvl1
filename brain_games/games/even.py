@@ -4,37 +4,34 @@
 """Function gameEven."""
 
 
-import random
+from brain_games.cli import welcome_user, welcome_user1
+from brain_games.functional import (
+    finish_game,
+    goodanswer,
+    question,
+    randomnumber,
+    wrong_answer,
+)
 
-import prompt
 
-
-def game_even():
-    """Welcome."""
-    print('Answer "yes" if number even otherwise answer "no".')
-
-
-def question(username):
+def maineven():
     """Do something interesting.
-
-    Args:
-        username: The argument.
 
     # noqa: DAR101 username
 
     """
-    number = random.randint(1, 100)
-    print('Question: {}'.format(number))
-    answer = prompt.string('You answer: ')
-    if (number % 2 == 0 and answer == 'yes') or (number % 2 == 1 and answer == 'no'):
-        print('Correct!')
-    elif number % 2 == 0:
-        noanswer = 'yes'
-        print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(answer, noanswer))
-        print("Let's try again, {}!".format(username))
-        question(username)
-    elif number % 2 == 1:
-        noanswer = 'no'
-        print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(answer, noanswer))
-        print("Let's try again, {}!".format(username))
-        question(username)
+    welcome_user()
+    print('Answer "yes" if number even otherwise answer "no".')
+    username = welcome_user1()
+    good = 0
+    while good < 3:
+        task = randomnumber()
+        answer = question(task)
+        if (task % 2 == 0 and answer == 'yes') or (task % 2 == 1 and answer == 'no'):
+            goodanswer()
+            good += 1
+        elif task % 2 == 0:
+            wrong_answer(username, answer, 'yes')
+        else:
+            wrong_answer(username, answer, 'no')
+    finish_game(username)
